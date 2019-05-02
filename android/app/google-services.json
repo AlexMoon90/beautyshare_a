@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "65305713049",
+    "firebase_url": "https://bshare-ba133.firebaseio.com",
+    "project_id": "bshare-ba133",
+    "storage_bucket": "bshare-ba133.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65305713049:android:3a642e776fbdc2d9",
+        "android_client_info": {
+          "package_name": "bluetime.bsbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKasW_t_fRsi7dpugxq08-qW5M95JkaHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65305713049:android:ccf8f0535544f4da",
+        "android_client_info": {
+          "package_name": "com.bluetime.beautyshare_a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65305713049-0fo4mmn30f5cvgkoo5htdbui72tbu3fs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bluetime.beautyshare_a",
+            "certificate_hash": "9173d5b8d7ba6a42ef599d564bf9028c765f8d4c"
+          }
+        },
+        {
+          "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKasW_t_fRsi7dpugxq08-qW5M95JkaHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65305713049:android:d0b40562ae276e2d",
+        "android_client_info": {
+          "package_name": "com.bluetime.beautyshare_alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65305713049-d7hjkbu2n939o0r6uiqb1j6u2isa5llu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bluetime.beautyshare_alpha",
+            "certificate_hash": "9173d5b8d7ba6a42ef599d564bf9028c765f8d4c"
+          }
+        },
+        {
+          "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKasW_t_fRsi7dpugxq08-qW5M95JkaHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65305713049:android:2ff858f70a9e2e0b",
+        "android_client_info": {
+          "package_name": "com.bluetime.beautysharebeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKasW_t_fRsi7dpugxq08-qW5M95JkaHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65305713049-g5vdmbe1ork3d4q08leo6jk44ognpnig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
