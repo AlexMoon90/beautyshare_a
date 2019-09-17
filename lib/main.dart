@@ -21,49 +21,51 @@ class home extends StatelessWidget {
       Widget build(BuildContext context) {
 
       return
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        color: Colors.white,
-        home :
-      StreamBuilder<FirebaseUser>(
-          stream: FirebaseAuth.instance.onAuthStateChanged,
-          builder: (BuildContext context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return waitingScreen();
-            } else {
-              if (snapshot.hasData) {
-                return StreamBuilder(
-                    stream: FirebaseAuth.instance.currentUser().asStream(),
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) return waitingScreen();
+      AlertProvider(
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          color: Colors.white,
+          home :
+        StreamBuilder<FirebaseUser>(
+            stream: FirebaseAuth.instance.onAuthStateChanged,
+            builder: (BuildContext context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return waitingScreen();
+              } else {
+                if (snapshot.hasData) {
+                  return StreamBuilder(
+                      stream: FirebaseAuth.instance.currentUser().asStream(),
+                      builder: (context, snapshot) {
+                        if (!snapshot.hasData) return waitingScreen();
 
-                      if (snapshot.hasData) {
-                        FirebaseUser cuser = snapshot.data;
-                        var useremail = cuser.email;
-                        print("user : $useremail");
+                        if (snapshot.hasData) {
+                          FirebaseUser cuser = snapshot.data;
+                          var useremail = cuser.email;
+                          print("user : $useremail");
 
-                        return StreamBuilder(
-                            stream: Firestore.instance
-                                .collection('User')
-                                .document(useremail)
-                                .snapshots(),
-                            builder: (context, snapshot) {
-                              if (!snapshot.hasData || snapshot.connectionState==ConnectionState.none )
+                          return StreamBuilder(
+                              stream: Firestore.instance
+                                  .collection('User')
+                                  .document(useremail)
+                                  .snapshots(),
+                              builder: (context, snapshot) {
+                                if (!snapshot.hasData || snapshot.connectionState==ConnectionState.none )
 
-                                return waitingScreen();
+                                  return waitingScreen();
 
-                              else if (snapshot.hasData&& snapshot.data.data==null) {
-                                return waitingScreen();}
+                                else if (snapshot.hasData&& snapshot.data.data==null) {
+                                  return waitingScreen();}
 
-                                else {
+                                  else {
 
-                                 return rootPage(snapshot.data);
-                              }
-                            });
-                      }
-                    });
+                                   return rootPage(snapshot.data);
+                                }
+                              });
+                        }
+                      });
+                }
+                return LoginPage(Auth());
               }
-              return LoginPage(Auth());
-            }
-          }));
+            })),
+      );
 } }

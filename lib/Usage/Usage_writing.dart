@@ -126,7 +126,7 @@ class MyCustomFormState extends State<MyCustomForm> {
      // flutter defined function
      showDialog(
        context: context,
-       builder: (BuildContext context2) {
+       builder: (BuildContext context) {
          // return object of type Dialog
          return AlertDialog(
            title: new Text("수고하셨습니다 작성하신 내용을 등록하겠습니다"),
@@ -137,7 +137,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                child: new Text("확인"),
                onPressed: () {
                  firestore_upload();
-                 Navigator.of(context2).pop();
+                 Navigator.of(context).pop();
                  Navigator.of(widget.context).pop();
 
 
@@ -161,7 +161,7 @@ class MyCustomFormState extends State<MyCustomForm> {
    alertnullphoto () {
      Alert.toast(context,
          "사진은 3개 모두 선택하셔야 합니다",
-         position: ToastPosition.bottom, duration: ToastDuration.long);
+         position: ToastPosition.center, duration: ToastDuration.long);
    }
 
 

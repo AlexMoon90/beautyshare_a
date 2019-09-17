@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "502620013907",
+    "firebase_url": "https://my-test-project-85c06.firebaseio.com",
+    "project_id": "my-test-project-85c06",
+    "storage_bucket": "my-test-project-85c06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502620013907:android:2a20c1c9a0c772b3",
+        "android_client_info": {
+          "package_name": "com.bluetime.provider_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502620013907-07h5pqd0d26a6jlrjkscbfqef17i948g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAww4abJb_RIRhfPplxBYOw9uS8xRRviPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502620013907-07h5pqd0d26a6jlrjkscbfqef17i948g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
